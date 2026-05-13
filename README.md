@@ -52,3 +52,5 @@ Cyber Security Monitoring & Detection Lab :
 | 192.168.4.0/24     | VMNet5                 | SECURITY ONION | EM4              | Network Adapter 5  |
 | 192.168.5.0/24     | VMNet6                 | SPLUNK    | EM5                   | Network Adapter 6  |
 
+<img width="1134" height="357" alt="image" src="https://github.com/user-attachments/assets/e1538d9d-5015-4f3c-9d42-57e481d5cf4a" />
+<img width="1126" height="510" alt="image" src="https://github.com/user-attachments/assets/c215e97d-6daf-4d69-8453-638793e8ee83" />
