@@ -3,7 +3,7 @@ A lab environment for simulating and analyzing cyber attacks, designed for learn
 
 Cyber Security Monitoring & Detection Lab : 
 <img width="1142" height="612" alt="image" src="https://github.com/user-attachments/assets/7097c22f-5592-434e-b301-0b4f1fc3c8c4" />
-| **Role** | **Operating System / ISO / VMDK** | **Description** |
+| **Role** | **OS / ISO / VMDK** | **Description** |
 |--------------|--------------------------------|----------------|
 | Firewall | pfSense-CE-2.6.0-RELEASE-amd64.iso | Open-source firewall, managing traffic and securing the network |
 | PC1 | Win11 x64 Pro 2022.iso | User workstation, simulating an endpoint |
