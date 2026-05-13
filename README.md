@@ -13,3 +13,21 @@ Cyber Security Monitoring & Detection Lab :
 | Metasploitable | Metasploitable 2.vmdk | Vulnerable virtual machine, used for exploitation practice |
 | Splunk | Ubuntu Server 22.10 (64bit).vmdk | Log collection and analysis server, for monitoring and SIEM tasks |
 | MGMT | Host System Windows 11 | Management host, controlling the entire lab |
+
+
+| **Component**              | **Subnet / IP Address**      | **Description** |
+|-----------------------------|------------------------------|-----------------|
+| External Subnet             | 192.168.114.0/24             | External-facing network segment |
+| Internal LAN Subnet         | 192.168.1.0/24               | Internal corporate/local network |
+| SPAN Port                   | No IP Address                | Mirror port for traffic monitoring |
+| Attacker Subnet             | 192.168.3.0/24               | Network segment for attack simulation |
+| Security Onion Logs Subnet  | 192.168.4.0/24               | Segment dedicated to log collection |
+| Splunk Log Collector Subnet | 192.168.5.0/24               | Segment for Splunk log ingestion |
+| Metasploitable              | DHCP                         | Vulnerable VM with dynamic IP |
+| ADC (Domain Controller)     | 192.168.1.100                | Active Directory server |
+| PC1 (Workstation)           | 192.168.1.10                 | User endpoint |
+| Attacker VM                 | DHCP                         | Pentesting/attack machine |
+| Splunk Server               | DHCP                         | Log analysis server |
+| Security Onion Sensor       | 192.168.114.50               | Security Onion monitoring node |
+| Security Onion MGMT         | 192.168.114.1                | Management interface for Security Onion |
+| DNS Servers                 | 8.8.8.8, 4.4.4.4             | External DNS resolution |
