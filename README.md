@@ -14,7 +14,7 @@ Cyber Security Monitoring & Detection Lab :
 | Splunk | Ubuntu Server 22.10 (64bit).vmdk | Log collection and analysis server, for monitoring and SIEM tasks |
 | MGMT | Host System Windows 11 | Management host, controlling the entire lab |
 
-
+**Network roles and subnets/IPs**
 | **Component**              | **Subnet / IP Address**      | **Description** |
 |-----------------------------|------------------------------|-----------------|
 | External Subnet             | 192.168.114.0/24             | External-facing network segment |
@@ -31,3 +31,24 @@ Cyber Security Monitoring & Detection Lab :
 | Security Onion Sensor       | 192.168.114.50               | Security Onion monitoring node |
 | Security Onion MGMT         | 192.168.114.1                | Management interface for Security Onion |
 | DNS Servers                 | 8.8.8.8, 4.4.4.4             | External DNS resolution |
+
+**VMware & pfSense Interface Mapping**
+| **VMware Adapter** | **Network Connection** | **Role** | **pfSense Interface** |
+|--------------------|------------------------|-----------|-----------------------|
+| Network Adapter 1  | NAT                    | WAN       | EM0                   |
+| Network Adapter 2  | VMNet2                 | LAN       | EM1                   |
+| Network Adapter 3  | VMNet3                 | SPAN      | EM2                   |
+| Network Adapter 4  | VMNet4                 | KALI      | EM3                   |
+| Network Adapter 5  | VMNet5                 | SECURITY ONION | EM4              |
+| Network Adapter 6  | VMNet6                 | SPLUNK    | EM5                   |
+
+**Subnet & Interface Overview**
+| **IP Subnet**      | **Network Connection** | **Role** | **pfSense Interface** | **VMware Adapter** |
+|--------------------|------------------------|-----------|-----------------------|--------------------|
+| 192.168.114.0/24   | NAT                    | WAN       | EM0                   | Network Adapter 1  |
+| 192.168.1.0/24     | VMNet2                 | LAN       | EM1                   | Network Adapter 2  |
+| No IP Address       | VMNet3                 | SPAN      | EM2                   | Network Adapter 3  |
+| 192.168.3.0/24     | VMNet4                 | KALI      | EM3                   | Network Adapter 4  |
+| 192.168.4.0/24     | VMNet5                 | SECURITY ONION | EM4              | Network Adapter 5  |
+| 192.168.5.0/24     | VMNet6                 | SPLUNK    | EM5                   | Network Adapter 6  |
+
